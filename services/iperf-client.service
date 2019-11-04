@@ -1,0 +1,10 @@
+Description=tufts demo iperf client
+
+[Service]
+User=pi
+Group=pi
+ExecStart=iperf3 -c 200:967d:402f:2f0b:ff26:74db:8f57:2899 -P 4 -t 30 -Z
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

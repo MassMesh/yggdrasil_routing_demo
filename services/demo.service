@@ -1,0 +1,11 @@
+Descriptoin=tufts demo
+
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/Source/ident_blink/
+ExecStart=/home/pi/Source/ident_blink/blink.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
